@@ -1,0 +1,15 @@
+%h1 MusicCroller
+%h4 by RedLion
+
+%h3 List
+
+- Entry.all.each do |entry|
+  %div.entry
+    %h4= entry.title
+    %p.date= entry.pub_date
+    %p.dl_link= entry.dl_link
+    %p.description
+      %span.site= entry.site
+      %br
+      = entry.content
+  %br
